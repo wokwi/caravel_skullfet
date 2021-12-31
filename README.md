@@ -1,18 +1,12 @@
-# Caravel Analog User
+# Caravel SkullFET
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![CI](https://github.com/efabless/caravel_user_project_analog/actions/workflows/user_project_ci.yml/badge.svg)](https://github.com/efabless/caravel_user_project_analog/actions/workflows/user_project_ci.yml) [![Caravan Build](https://github.com/efabless/caravel_user_project_analog/actions/workflows/caravan_build.yml/badge.svg)](https://github.com/efabless/caravel_user_project_analog/actions/workflows/caravan_build.yml)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) 
 
----
+> Skull shaped MOSFET cells for the Efabless's 130nm process
 
-| :exclamation: Important Note            |
-|-----------------------------------------|
+## List of cells
 
-## Please fill in your project documentation in this README.md file 
+- [Inverter](mag/skullfet_inverter.mag)
+- [NAND](mag/skullfet_nand.mag)
 
-
-:warning: | Use this sample project for analog user projects. 
-:---: | :---
-
----
-
-Refer to [README](docs/source/index.rst) for this sample project documentation. 
+Copyright (C) 2021 Uri Shaked
