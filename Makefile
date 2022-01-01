@@ -186,4 +186,4 @@ netgen/skullfet_inverter.spice: mag/skullfet_inverter.mag
 	echo "extract ; ext2spice lvs ; ext2spice cthresh 0; ext2spice" | magic -rcfile $(PDK_ROOT)/sky130A/libs.tech/magic/sky130A.magicrc -noconsole -dnull $<
 
 netgen/user_analog_project_wrapper.spice: mag/user_analog_project_wrapper.mag
-	echo "extract ; ext2spice lvs ; ext2spice cthresh 0; ext2spice" | magic -rcfile $(PDK_ROOT)/sky130A/libs.tech/magic/sky130A.magicrc -noconsole -dnull $<
+	echo "extract ; ext2spice lvs ; ext2spice" | magic -rcfile $(PDK_ROOT)/sky130A/libs.tech/magic/sky130A.magicrc -noconsole -dnull $<

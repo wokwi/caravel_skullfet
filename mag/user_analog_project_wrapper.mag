@@ -865,10 +865,6 @@ use skullfet_inverter  skullfet_inverter_0
 timestamp 1640879321
 transform 1 0 275500 0 1 336500
 box 0 0 1070 1440
-use skullfet_logo  skullfet_logo_0
-timestamp 1640879321
-transform 1 0 94982 0 1 114871
-box 28400 11500 85100 135700
 << labels >>
 flabel metal3 s 291760 134615 292400 134671 0 FreeSans 560 0 0 0 gpio_analog[0]
 port 0 nsew signal bidirectional
