@@ -1,0 +1,30 @@
+* NGSPICE file created from skullfet_inverter.ext - technology: sky130A
+
+.subckt skullfet_inverter VGND VPWR Y A
+X0 VGND A Y VGND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=4.05e+06u l=400000u
+X1 Y A VPWR VPWR sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=4.05e+06u l=400000u
+C0 m2_568_1148# m2_730_446# 0.19fF
+C1 m2_568_1148# m1_568_1148# 1.12fF
+C2 Y VPWR 0.04fF
+C3 Y m1_730_2174# 0.25fF
+C4 m2_568_1148# m2_730_2174# 0.25fF
+C5 m2_730_446# Y 0.05fF
+C6 m1_730_446# Y 0.26fF
+C7 Y m1_568_1148# 0.19fF
+C8 A m1_730_2174# 0.11fF
+C9 m2_730_2174# Y 0.05fF
+C10 m2_730_446# A 0.03fF
+C11 m1_730_446# A 0.11fF
+C12 m1_568_1148# A 0.26fF
+C13 m2_568_1148# Y 0.12fF
+C14 m2_730_2174# A 0.03fF
+C15 m2_730_446# VPWR 0.06fF
+C16 m1_730_446# VPWR 0.54fF
+C17 m2_730_446# m1_730_446# 1.65fF
+C18 m1_568_1148# VPWR 0.03fF
+C19 m1_568_1148# m1_730_2174# 0.22fF
+C20 m2_568_1148# A 0.20fF
+C21 m1_730_446# m1_568_1148# 0.17fF
+C22 m2_730_2174# m1_730_2174# 1.65fF
+.ends
+
