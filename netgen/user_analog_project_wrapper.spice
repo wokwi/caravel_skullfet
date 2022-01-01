@@ -5,6 +5,13 @@ X0 Y A VPWR VPWR sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=4.05e+07u l=4
 X1 VGND A Y VGND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=4.05e+07u l=4e+06u
 .ends
 
+.subckt skullfet_nand A B Y VPWR VGND
+X0 a_459_1161# B VGND VGND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=4.05e+06u l=540000u
+X1 VPWR A Y VPWR sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=4.05e+06u l=540000u
+X2 Y B VPWR VPWR sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=4.05e+06u l=540000u
+X3 a_459_1161# A Y VGND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=4.05e+06u l=540000u
+.ends
+
 .subckt skullfet_inverter VGND VPWR Y A
 X0 VGND A Y VGND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=4.05e+06u l=400000u
 X1 Y A VPWR VPWR sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=4.05e+06u l=400000u
@@ -117,6 +124,7 @@ X1 Y A VPWR VPWR sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=4.05e+06u l=4
 + wbs_dat_o[7] wbs_dat_o[8] wbs_dat_o[9] wbs_sel_i[0] wbs_sel_i[1] wbs_sel_i[2] wbs_sel_i[3]
 + wbs_stb_i wbs_we_i
 Xskullfet_inverter_xl_0 vssa1 vdda1 io_analog[3] io_analog[2] skullfet_inverter_xl
+Xskullfet_nand_0 io_analog[7] io_analog[8] io_analog[9] vdda1 vssa1 skullfet_nand
 Xskullfet_inverter_0 vssa1 vdda1 io_analog[1] skullfet_inverter_0/A skullfet_inverter
 .ends
 
